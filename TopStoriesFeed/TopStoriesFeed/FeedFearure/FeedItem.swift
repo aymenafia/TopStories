@@ -7,13 +7,28 @@
 
 import Foundation
 
-struct FeedItem {
-    let id: UUID
-    let title: String
-    let abstract: String
-    let multimedia: [Multimedia]
+public struct FeedItem: Equatable {
+    public let id: UUID
+    public let title: String?
+    public let abstract: String?
+    public let storyURL: URL?
+    public let multimedia: [Multimedia]?
+    
+    
+    public init(id: UUID, title: String?, abstract: String?,storyURL: URL, multimedia: [Multimedia]?) {
+        self.id = id
+        self.title = title
+        self.abstract = abstract
+        self.multimedia = multimedia
+        self.storyURL = storyURL
+    }
 }
 
-struct Multimedia {
-    let url: URL
+public struct Multimedia: Equatable, Decodable {
+    public let url: URL
+    
+    public init( url: URL) {
+        self.url = url
+    }
 }
+
