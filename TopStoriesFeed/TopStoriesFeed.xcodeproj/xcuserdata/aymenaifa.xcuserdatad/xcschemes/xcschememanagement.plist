@@ -14,10 +14,25 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>TopStoriesFeediOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>CBA6D98128A9219B00BB4757</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBA6D9E528AA7B1400BB4757</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBA6D9EC28AA7B1500BB4757</key>
 		<dict>
 			<key>primary</key>
 			<true/>
