@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Top Stories-->
         <scene sceneID="Ij9-Xf-p6S">
             <objects>
-                <tableViewController id="fiL-yY-CJd" sceneMemberID="viewController">
+                <tableViewController id="fiL-yY-CJd" customClass="FeedViewController" customModule="Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6SX-hU-e7p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,24 +26,21 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A88-yB-htg">
                                             <rect key="frame" x="20" y="17" width="374" height="546"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-qd-Wtn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="81.5" height="149.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gdO-K3-qCj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="149.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-3V-BXI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="149.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="e9I-3V-BXI" firstAttribute="width" secondItem="dHb-qd-Wtn" secondAttribute="width" multiplier="0.509202" id="3Ct-hX-SEu"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e9I-3V-BXI" secondAttribute="trailing" constant="20" symbolic="YES" id="7Sm-j0-GpO"/>
-                                                        <constraint firstItem="e9I-3V-BXI" firstAttribute="leading" secondItem="dHb-qd-Wtn" secondAttribute="leading" id="AUp-DD-Mg5"/>
-                                                        <constraint firstItem="e9I-3V-BXI" firstAttribute="top" secondItem="dHb-qd-Wtn" secondAttribute="top" id="UBM-Mz-KZ6"/>
+                                                        <constraint firstItem="e9I-3V-BXI" firstAttribute="leading" secondItem="gdO-K3-qCj" secondAttribute="leading" id="Cvd-St-Bts"/>
+                                                        <constraint firstItem="e9I-3V-BXI" firstAttribute="top" secondItem="gdO-K3-qCj" secondAttribute="top" id="NJm-EU-ACH"/>
                                                     </constraints>
-                                                </view>
+                                                </stackView>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAC-65-iyd" userLabel="Image Container">
                                                     <rect key="frame" x="0.0" y="159.5" width="357" height="357"/>
                                                     <subviews>
@@ -94,7 +91,7 @@
                             <outlet property="delegate" destination="fiL-yY-CJd" id="TEl-eu-2hf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rc3-r6-13L"/>
+                    <navigationItem key="navigationItem" title="Top Stories" id="rc3-r6-13L"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjS-Yb-Vm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

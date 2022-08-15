@@ -15,6 +15,7 @@
 		CBA6D9C328AA58DD00BB4757 /* PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9C228AA58DD00BB4757 /* PrototypeTests.swift */; };
 		CBA6D9CD28AA58DD00BB4757 /* PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9CC28AA58DD00BB4757 /* PrototypeUITests.swift */; };
 		CBA6D9CF28AA58DD00BB4757 /* PrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9CE28AA58DD00BB4757 /* PrototypeUITestsLaunchTests.swift */; };
+		CBA6D9DC28AA66C300BB4757 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9DB28AA66C300BB4757 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CBA6D9C828AA58DD00BB4757 /* PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA6D9CC28AA58DD00BB4757 /* PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeUITests.swift; sourceTree = "<group>"; };
 		CBA6D9CE28AA58DD00BB4757 /* PrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBA6D9DB28AA66C300BB4757 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CBA6D9B428AA58DD00BB4757 /* Assets.xcassets */,
 				CBA6D9B628AA58DD00BB4757 /* LaunchScreen.storyboard */,
 				CBA6D9B928AA58DD00BB4757 /* Info.plist */,
+				CBA6D9DB28AA66C300BB4757 /* FeedViewController.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA6D9AC28AA58DB00BB4757 /* AppDelegate.swift in Sources */,
+				CBA6D9DC28AA66C300BB4757 /* FeedViewController.swift in Sources */,
 				CBA6D9AE28AA58DB00BB4757 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
