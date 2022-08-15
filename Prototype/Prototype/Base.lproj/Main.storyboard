@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="gvj-5l-0Ob">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="gvj-5l-0Ob" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gvj-5l-0Ob" id="B8R-M9-Zes">
@@ -84,6 +84,11 @@
                                         <constraint firstItem="A88-yB-htg" firstAttribute="top" secondItem="B8R-M9-Zes" secondAttribute="topMargin" priority="999" constant="6" id="g6R-BH-cBn"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="author" destination="CUw-Je-zCD" id="oKi-7o-Coh"/>
+                                    <outlet property="feedImageView" destination="8Kv-6R-rcY" id="sVd-p7-4NP"/>
+                                    <outlet property="title" destination="e9I-3V-BXI" id="zNs-FC-FQ0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
