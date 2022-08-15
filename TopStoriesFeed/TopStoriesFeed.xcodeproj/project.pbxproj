@@ -25,6 +25,9 @@
 		CBA6D9EE28AA7B1500BB4757 /* TopStoriesFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA6D9E628AA7B1400BB4757 /* TopStoriesFeediOS.framework */; };
 		CBA6D9F328AA7B1500BB4757 /* TopStoriesFeediOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9F228AA7B1500BB4757 /* TopStoriesFeediOSTests.swift */; };
 		CBA6D9F428AA7B1500BB4757 /* TopStoriesFeediOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA6D9E828AA7B1400BB4757 /* TopStoriesFeediOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBA6D9FC28AA86AC00BB4757 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9FB28AA86AC00BB4757 /* FeedViewControllerTests.swift */; };
+		CBA6D9FE28AA8AC800BB4757 /* TopStoriesFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; platformFilter = ios; };
+		CBA6D9FF28AA8AC800BB4757 /* TopStoriesFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBEEAB8528A439F300CD65EB /* TopStoriesFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; };
 		CBEEAB8A28A439F300CD65EB /* TopStoriesFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEAB8928A439F300CD65EB /* TopStoriesFeedTests.swift */; };
 		CBEEAB8B28A439F300CD65EB /* TopStoriesFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEEAB7F28A439F300CD65EB /* TopStoriesFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +52,13 @@
 			remoteGlobalIDString = CBA6D9E528AA7B1400BB4757;
 			remoteInfo = TopStoriesFeediOS;
 		};
+		CBA6DA0028AA8AC800BB4757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEEAB7328A439F300CD65EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEEAB7B28A439F300CD65EB;
+			remoteInfo = TopStoriesFeed;
+		};
 		CBEEAB8628A439F300CD65EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBEEAB7328A439F300CD65EB /* Project object */;
@@ -57,6 +67,20 @@
 			remoteInfo = TopStoriesFeed;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBA6DA0228AA8AC800BB4757 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBA6D9FF28AA8AC800BB4757 /* TopStoriesFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CBA6D97228A7E50D00BB4757 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -77,6 +101,7 @@
 		CBA6D9E828AA7B1400BB4757 /* TopStoriesFeediOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopStoriesFeediOS.h; sourceTree = "<group>"; };
 		CBA6D9ED28AA7B1500BB4757 /* TopStoriesFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopStoriesFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA6D9F228AA7B1500BB4757 /* TopStoriesFeediOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesFeediOSTests.swift; sourceTree = "<group>"; };
+		CBA6D9FB28AA86AC00BB4757 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TopStoriesFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEEAB7F28A439F300CD65EB /* TopStoriesFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopStoriesFeed.h; sourceTree = "<group>"; };
 		CBEEAB8428A439F300CD65EB /* TopStoriesFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopStoriesFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA6D9FE28AA8AC800BB4757 /* TopStoriesFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +228,16 @@
 			isa = PBXGroup;
 			children = (
 				CBA6D9F228AA7B1500BB4757 /* TopStoriesFeediOSTests.swift */,
+				CBA6D9FB28AA86AC00BB4757 /* FeedViewControllerTests.swift */,
 			);
 			path = TopStoriesFeediOSTests;
+			sourceTree = "<group>";
+		};
+		CBA6D9FD28AA8AC800BB4757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CBEEAB7228A439F300CD65EB = {
@@ -215,6 +249,7 @@
 				CBA6D9E728AA7B1400BB4757 /* TopStoriesFeediOS */,
 				CBA6D9F128AA7B1500BB4757 /* TopStoriesFeediOSTests */,
 				CBEEAB7D28A439F300CD65EB /* Products */,
+				CBA6D9FD28AA8AC800BB4757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -321,10 +356,12 @@
 				CBA6D9E228AA7B1400BB4757 /* Sources */,
 				CBA6D9E328AA7B1400BB4757 /* Frameworks */,
 				CBA6D9E428AA7B1400BB4757 /* Resources */,
+				CBA6DA0228AA8AC800BB4757 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBA6DA0128AA8AC800BB4757 /* PBXTargetDependency */,
 			);
 			name = TopStoriesFeediOS;
 			productName = TopStoriesFeediOS;
@@ -494,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA6D9FC28AA86AC00BB4757 /* FeedViewControllerTests.swift in Sources */,
 				CBA6D9F328AA7B1500BB4757 /* TopStoriesFeediOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +579,12 @@
 			isa = PBXTargetDependency;
 			target = CBA6D9E528AA7B1400BB4757 /* TopStoriesFeediOS */;
 			targetProxy = CBA6D9EF28AA7B1500BB4757 /* PBXContainerItemProxy */;
+		};
+		CBA6DA0128AA8AC800BB4757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = CBEEAB7B28A439F300CD65EB /* TopStoriesFeed */;
+			targetProxy = CBA6DA0028AA8AC800BB4757 /* PBXContainerItemProxy */;
 		};
 		CBEEAB8728A439F300CD65EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
