@@ -14,13 +14,30 @@ struct FeedImageViewModel {
 }
 
 final class FeedViewController: UITableViewController {
-    
+    private let feed = FeedImageViewModel.prototypeFeed
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return feed.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "FeedImageCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedImageCell", for: indexPath) as! FeedImageCell
+        let model = feed[indexPath.row]
+        cell.configure(with: model)
+        return cell
     }
     
 }
+
+extension FeedImageCell {
+    func configure(with model: FeedImageViewModel) {
+        title.text = model.title
+        title.isHidden = model.title == nil
+        
+        author.text = model.author
+        author.isHidden = model.author == nil
+        
+        fadeIn(UIImage(named: model.imageName))
+    }
+}
+
