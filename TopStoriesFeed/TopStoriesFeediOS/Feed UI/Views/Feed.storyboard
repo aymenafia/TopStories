@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,9 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="kqZ-O6-J7C" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoK-9w-oYD">
+                                    <rect key="frame" x="8" y="8" width="398" height="18"/>
+                                    <viewLayoutGuide key="safeArea" id="pba-rY-AgS"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="XoK-9w-oYD" firstAttribute="leading" secondItem="kqZ-O6-J7C" secondAttribute="leadingMargin" id="4bZ-5y-OKB"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="XoK-9w-oYD" secondAttribute="trailing" id="CcJ-4p-qMN"/>
+                                <constraint firstItem="XoK-9w-oYD" firstAttribute="top" secondItem="kqZ-O6-J7C" secondAttribute="top" constant="8" id="e5T-HY-xXv"/>
+                                <constraint firstAttribute="bottom" secondItem="XoK-9w-oYD" secondAttribute="bottom" constant="8" id="fbB-Eb-SFy"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="XoK-9w-oYD" id="zuU-92-WVu"/>
+                                <outletCollection property="gestureRecognizers" destination="KXx-n3-WlJ" appends="YES" id="wFu-My-TfV"/>
+                            </connections>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="gke-bn-SWv" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="580"/>
+                                <rect key="frame" x="0.0" y="78.5" width="414" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gke-bn-SWv" id="QTo-4u-Yga">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
@@ -54,6 +80,9 @@
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="gke-bn-SWv" eventType="touchUpInside" id="Kto-3o-GRb"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,11 +125,20 @@
                                         <constraint firstItem="Lc2-nR-ygs" firstAttribute="top" secondItem="QTo-4u-Yga" secondAttribute="topMargin" priority="999" constant="6" id="q09-Yq-4x7"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLabel" destination="JG4-kV-k4i" id="cQO-gE-wX4"/>
+                                    <outlet property="feedImageContainer" destination="OPk-Qu-vMn" id="KRI-kA-GGP"/>
+                                    <outlet property="feedImageRetryButton" destination="5eD-P6-rQE" id="HQF-My-3sb"/>
+                                    <outlet property="feedImageView" destination="KIw-rD-cq3" id="8Yv-yc-mSC"/>
+                                    <outlet property="titleContainer" destination="2B8-qO-5hr" id="fW6-M1-Bv0"/>
+                                    <outlet property="titleLabel" destination="bji-9R-e0N" id="Tta-9n-VRC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="jVh-Pd-8NK" id="Ecd-bS-gVD"/>
                             <outlet property="delegate" destination="jVh-Pd-8NK" id="DBa-ix-VaB"/>
+                            <outlet property="prefetchDataSource" destination="jVh-Pd-8NK" id="QO5-gG-3Q2"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Top Stories" id="GHA-9b-DPY"/>
@@ -109,9 +147,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="refresh" destination="fbh-gj-2tR" eventType="valueChanged" id="ZGS-2e-gP7"/>
+                            <action selector="refresh" destination="jVh-Pd-8NK" eventType="valueChanged" id="zur-AL-JX8"/>
                         </connections>
                     </refreshControl>
                     <connections>
+                        <outlet property="errorView" destination="kqZ-O6-J7C" id="dXL-MM-G5G"/>
                         <outlet property="refreshController" destination="fbh-gj-2tR" id="9sd-Pc-2RP"/>
                     </connections>
                 </tableViewController>
@@ -121,8 +161,13 @@
                         <outlet property="view" destination="RM8-NI-h9U" id="ji4-MJ-iyw"/>
                     </connections>
                 </customObject>
+                <tapGestureRecognizer id="KXx-n3-WlJ">
+                    <connections>
+                        <action selector="hideMessageAnimated" destination="kqZ-O6-J7C" id="hX6-12-3BD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="504" y="-1"/>
+            <point key="canvasLocation" x="-222" y="-504"/>
         </scene>
     </scenes>
     <resources>
