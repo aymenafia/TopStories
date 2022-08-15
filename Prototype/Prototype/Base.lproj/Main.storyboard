@@ -99,6 +99,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Top Stories" id="rc3-r6-13L"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="J29-qM-GHj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="refresh" destination="fiL-yY-CJd" eventType="valueChanged" id="4FJ-C0-1lS"/>
