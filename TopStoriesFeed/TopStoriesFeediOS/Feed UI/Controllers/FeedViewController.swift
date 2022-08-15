@@ -5,7 +5,6 @@
 //  Created by Aymen Aifa on 15.08.22.
 //
 
-import TopStoriesFeed
 import UIKit
 
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
