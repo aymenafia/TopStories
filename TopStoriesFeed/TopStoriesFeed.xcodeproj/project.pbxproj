@@ -28,6 +28,7 @@
 		CBA6D9FC28AA86AC00BB4757 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D9FB28AA86AC00BB4757 /* FeedViewControllerTests.swift */; };
 		CBA6D9FE28AA8AC800BB4757 /* TopStoriesFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; platformFilter = ios; };
 		CBA6D9FF28AA8AC800BB4757 /* TopStoriesFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBA6DA0328AA8C6200BB4757 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6D97A28A8436F00BB4757 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CBEEAB8528A439F300CD65EB /* TopStoriesFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEEAB7C28A439F300CD65EB /* TopStoriesFeed.framework */; };
 		CBEEAB8A28A439F300CD65EB /* TopStoriesFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEAB8928A439F300CD65EB /* TopStoriesFeedTests.swift */; };
 		CBEEAB8B28A439F300CD65EB /* TopStoriesFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEEAB7F28A439F300CD65EB /* TopStoriesFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -533,6 +534,7 @@
 			files = (
 				CBA6D9FC28AA86AC00BB4757 /* FeedViewControllerTests.swift in Sources */,
 				CBA6D9F328AA7B1500BB4757 /* TopStoriesFeediOSTests.swift in Sources */,
+				CBA6DA0328AA8C6200BB4757 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
