@@ -20,25 +20,16 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if UIDevice.current.orientation.isLandscape {
-//            detailsStackView.translatesAutoresizingMaskIntoConstraints = false
-//
-//            detailsStackView.axis = .horizontal
-//            detailsStackView.updateConstraints()
-//            self.loadViewIfNeeded()
-//            self.updateViewConstraints()
-//
-//        } else {
-//            detailsStackView.translatesAutoresizingMaskIntoConstraints = false
-//
-//            detailsStackView.axis = .vertical
-//            detailsStackView.updateConstraints()
-//            self.loadViewIfNeeded()
-//            self.updateViewConstraints()
-//        }
+
         storyImageView.setImageAnimated(presenter.image())
         titleLabel.text = presenter.detailsTitle()
         descriptionLabel.text = presenter.description()
@@ -50,12 +41,46 @@ class DetailsViewController: UIViewController {
         debugPrint("Hello Yosra")
         presenter.showSeeMore(url: presenter.readMoreURL())
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection:
+    UITraitCollection?) {
+        if view.traitCollection.verticalSizeClass == .compact {
+            detailsStackView.axis = .horizontal
+        } else {
+            detailsStackView.axis = .vertical
+        }
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if UIDevice.current.orientation.isLandscape {
+            detailsStackView.translatesAutoresizingMaskIntoConstraints = false
+
+            detailsStackView.axis = .horizontal
+            detailsStackView.updateConstraints()
+            self.loadViewIfNeeded()
+            self.updateViewConstraints()
+            self.viewDidLayoutSubviews()
+            detailsStackView.superview?.layoutIfNeeded()
+
+
+        } else {
+            detailsStackView.translatesAutoresizingMaskIntoConstraints = false
+            detailsStackView.axis = .vertical
+            detailsStackView.updateConstraints()
+            self.loadViewIfNeeded()
+            self.updateViewConstraints()
+            self.viewDidLayoutSubviews()
+            detailsStackView.superview?.layoutIfNeeded()
+
+        }
+    }
 }
 
 // MARK: - DetailsView
 extension DetailsViewController: DetailsView {
     func showLoading(_loading: Bool) {
-        
+              
     }
     
     

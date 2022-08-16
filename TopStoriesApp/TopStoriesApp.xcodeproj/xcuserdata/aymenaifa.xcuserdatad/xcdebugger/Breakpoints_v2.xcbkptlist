@@ -14,26 +14,42 @@
             filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Views/Controllers/DetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7369F0F9-0FF7-4DFD-BD29-771BAE1B1CFD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Views/Controllers/DetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F299D65-47CA-400F-BECC-2123D9E8667A - 739dcae991736231"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TopStoriesFeediOS.DetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TopStoriesFeediOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeediOS/Feed%20UI/Views/Controllers/DetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1986">
+               </Location>
+               <Location
+                  uuid = "3F299D65-47CA-400F-BECC-2123D9E8667A - 739dcae991736231"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TopStoriesFeediOS.DetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TopStoriesFeediOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeediOS/Feed%20UI/Views/Controllers/DetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "3290">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
