@@ -44,6 +44,7 @@ public final class FeedUIComposer {
         let detailsViewController = storyboard.instantiateInitialViewController() as! DetailsViewController
         let coordinator = DetailsDefaultRouter(viewController: detailsViewController)
         detailsViewController.presenter = DetailsDefaultPresenter(view: detailsViewController, router: coordinator, feedImageViewModel: feedImageViewModel)
+        detailsViewController.title = feedImageViewModel.byline
         detailsViewController.loadViewIfNeeded()
         return detailsViewController
     }

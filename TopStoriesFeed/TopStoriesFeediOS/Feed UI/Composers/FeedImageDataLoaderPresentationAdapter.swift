@@ -8,6 +8,7 @@
 import TopStoriesFeed
 
 final class FeedImageDataLoaderPresentationAdapter<View: FeedImageView, Image>: FeedImageCellControllerDelegate where View.Image == Image {
+    
     private let model: FeedImage
     private let imageLoader: FeedImageDataLoader
     private var task: FeedImageDataLoaderTask?
@@ -23,7 +24,7 @@ final class FeedImageDataLoaderPresentationAdapter<View: FeedImageView, Image>: 
         presenter?.didStartLoadingImageData(for: model)
         
         let model = self.model
-        guard let url = model.multimedia?.first?.url else { return }
+        guard let url = model.multimedia.first?.url else { return }
 
         task = imageLoader.loadImageData(from: url) { [weak self] result in
             switch result {

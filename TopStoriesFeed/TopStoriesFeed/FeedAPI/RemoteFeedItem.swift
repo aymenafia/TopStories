@@ -11,6 +11,6 @@ internal struct RemoteFeedItem: Codable {
     internal let title: String?
     internal let abstract: String?
     internal let url: URL
-    internal let multimedia: [Multimedia]?
+    internal let multimedia: [Multimedia]
     internal let byline: String?
 }

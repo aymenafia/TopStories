@@ -28,7 +28,7 @@ public final class RemoteFeedLoader: FeedLoader {
         client.get(from: url) { [weak self] result in
             guard self != nil else { return }
             switch result {
-            case let .success(data, response):
+            case let .success((data, response)):
                 completion(RemoteFeedLoader.map(data, from: response))
             case .failure:
                 completion(.failure(Error.connectivity))
@@ -49,7 +49,7 @@ public final class RemoteFeedLoader: FeedLoader {
 private extension Array where Element == RemoteFeedItem {
     func toModels() -> [FeedImage] {
         
-        return map { FeedImage(title: $0.title, abstract: $0.abstract, byline: $0.byline, storyURL: ($0.multimedia?.first!.url)!, multimedia:  $0.multimedia, url: $0.url) }
+        return map { FeedImage(title: $0.title, abstract: $0.abstract, byline: $0.byline, storyURL: $0.multimedia.first?.url ?? nil, multimedia:  $0.multimedia, url: $0.url) }
     }
 }
 

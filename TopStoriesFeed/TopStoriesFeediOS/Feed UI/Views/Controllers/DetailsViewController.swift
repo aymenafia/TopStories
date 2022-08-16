@@ -27,8 +27,7 @@ class DetailsViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
 
         storyImageView.setImageAnimated(presenter.image())
         titleLabel.text = presenter.detailsTitle()

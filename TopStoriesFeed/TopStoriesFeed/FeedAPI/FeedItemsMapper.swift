@@ -12,7 +12,6 @@ internal final class FeedItemsMapper {
     private struct Root: Codable {
         let results: [RemoteFeedItem]
     }
-
     
     static var OK_200: Int {
         return 200
@@ -28,8 +27,8 @@ internal final class FeedItemsMapper {
         }
         
         return root.results
-        }
     }
+}
 
 
 

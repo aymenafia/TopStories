@@ -14,42 +14,138 @@
             filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Views/Controllers/DetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EF003EA-3488-4E89-9105-3F20FE8A6023"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeed/Feed Presentation/FeedPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "didStartLoadingFeed()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3F299D65-47CA-400F-BECC-2123D9E8667A - 739dcae991736231"
+                  uuid = "0EF003EA-3488-4E89-9105-3F20FE8A6023 - 5e5b76a5f6942bae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TopStoriesFeediOS.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "TopStoriesFeediOS"
+                  symbolName = "TopStoriesFeed.FeedPresenter.didStartLoadingFeed() -&gt; ()"
+                  moduleName = "TopStoriesFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeediOS/Feed%20UI/Views/Controllers/DetailsViewController.swift"
+                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeed/Feed%20Presentation/FeedPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "1986">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "32">
                </Location>
                <Location
-                  uuid = "3F299D65-47CA-400F-BECC-2123D9E8667A - 739dcae991736231"
+                  uuid = "0EF003EA-3488-4E89-9105-3F20FE8A6023 - 5e5b76a5f6942bae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TopStoriesFeediOS.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "TopStoriesFeediOS"
+                  symbolName = "TopStoriesFeed.FeedPresenter.didStartLoadingFeed() -&gt; ()"
+                  moduleName = "TopStoriesFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeediOS/Feed%20UI/Views/Controllers/DetailsViewController.swift"
+                  urlString = "file:///Users/aymenaifa/Desktop/myChallenge/TopStoriesFeed/TopStoriesFeed/Feed%20Presentation/FeedPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "3290">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "35">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "577D4458-ED24-49F3-B8CD-8631DBB2ACBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeed/Feed Presentation/FeedPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "didFinishLoadingFeed(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDC73A8C-3A72-403B-8624-2CBACEB8505B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeed/Feed Presentation/FeedPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "didFinishLoadingFeed(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A896CFE-06F1-4682-9414-26418E1C8657"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Composers/FeedLoaderPresentationAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "didRequestFeedRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "237B0EAC-9313-4F8A-9BD3-57AE1A785D82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Composers/FeedLoaderPresentationAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "didRequestFeedRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3B9B9FB-BE3B-4DB1-9DA6-55D218B06A7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TopStoriesFeed/TopStoriesFeediOS/Feed UI/Composers/FeedUIComposer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "makeDetailsViewController(feedImageViewModel:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
