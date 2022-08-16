@@ -12,11 +12,11 @@ public final class RemoteFeedLoader: FeedLoader {
     private let url: URL
     private let client: HTTPClient
     
-    
     public enum Error: Swift.Error {
         case connectivity
         case invalidData
     }
+    
     public typealias Result = FeedLoader.Result
     
     public init(url: URL, client: HTTPClient) {
@@ -49,7 +49,7 @@ public final class RemoteFeedLoader: FeedLoader {
 private extension Array where Element == RemoteFeedItem {
     func toModels() -> [FeedImage] {
         
-        return map { FeedImage(title: $0.title, abstract: $0.abstract, storyURL: ($0.multimedia?.first!.url)!, multimedia:  $0.multimedia) }
+        return map { FeedImage(title: $0.title, abstract: $0.abstract, byline: $0.byline, storyURL: ($0.multimedia?.first!.url)!, multimedia:  $0.multimedia, url: $0.url) }
     }
 }
 

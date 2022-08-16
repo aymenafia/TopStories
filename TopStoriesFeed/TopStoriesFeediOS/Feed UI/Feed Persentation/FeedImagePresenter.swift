@@ -26,7 +26,7 @@ final class FeedImagePresenter<View: FeedImageView, Image> where View.Image == I
     func didStartLoadingImageData(for model: FeedImage) {
         view.display(FeedImageViewModel(
             title: model.title,
-            abstract: model.abstract,
+            abstract: model.abstract, byline: model.byline, url: model.url,
             image: nil,
             isLoading: true,
             shouldRetry: false))
@@ -42,6 +42,8 @@ final class FeedImagePresenter<View: FeedImageView, Image> where View.Image == I
         view.display(FeedImageViewModel(
             title: model.title,
             abstract: model.abstract,
+            byline: model.byline,
+            url: model.url,
             image: image,
             isLoading: false,
             shouldRetry: false))
@@ -51,6 +53,8 @@ final class FeedImagePresenter<View: FeedImageView, Image> where View.Image == I
         view.display(FeedImageViewModel(
             title: model.title,
             abstract: model.abstract,
+            byline: model.byline,
+            url:  model.url,
             image: nil,
             isLoading: false,
             shouldRetry: true))

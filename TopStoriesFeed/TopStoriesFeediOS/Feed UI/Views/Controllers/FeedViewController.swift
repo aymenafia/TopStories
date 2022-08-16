@@ -38,6 +38,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         errorView?.message = viewModel.message
     }
 
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        cellController(forRowAt: indexPath).selected()
+    }
+    
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableModel.count
     }
