@@ -48,7 +48,8 @@ public final class RemoteFeedLoader: FeedLoader {
 
 private extension Array where Element == RemoteFeedItem {
     func toModels() -> [FeedImage] {
-        return map { FeedImage(id: $0.id, title: $0.title, abstract: $0.abstract, storyURL: $0.url, multimedia: nil) }
+        
+        return map { FeedImage(title: $0.title, abstract: $0.abstract, storyURL: ($0.multimedia?.first!.url)!, multimedia:  $0.multimedia) }
     }
 }
 

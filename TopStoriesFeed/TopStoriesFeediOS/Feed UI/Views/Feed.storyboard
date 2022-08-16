@@ -11,18 +11,18 @@
         <!--Top Stories-->
         <scene sceneID="5Vo-hh-nvB">
             <objects>
-                <tableViewController id="jVh-Pd-8NK" customClass="FeedViewController" customModule="Prototype" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jVh-Pd-8NK" customClass="FeedViewController" customModule="TopStoriesFeediOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="v3e-Tq-aVL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="kqZ-O6-J7C" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Bs7-qr-85b" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoK-9w-oYD">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2E-IQ-H3q">
                                     <rect key="frame" x="8" y="8" width="398" height="18"/>
-                                    <viewLayoutGuide key="safeArea" id="pba-rY-AgS"/>
+                                    <viewLayoutGuide key="safeArea" id="HHW-f6-7fV"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -31,18 +31,17 @@
                             <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="XoK-9w-oYD" firstAttribute="leading" secondItem="kqZ-O6-J7C" secondAttribute="leadingMargin" id="4bZ-5y-OKB"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="XoK-9w-oYD" secondAttribute="trailing" id="CcJ-4p-qMN"/>
-                                <constraint firstItem="XoK-9w-oYD" firstAttribute="top" secondItem="kqZ-O6-J7C" secondAttribute="top" constant="8" id="e5T-HY-xXv"/>
-                                <constraint firstAttribute="bottom" secondItem="XoK-9w-oYD" secondAttribute="bottom" constant="8" id="fbB-Eb-SFy"/>
+                                <constraint firstItem="O2E-IQ-H3q" firstAttribute="leading" secondItem="Bs7-qr-85b" secondAttribute="leadingMargin" id="Gs9-es-Chg"/>
+                                <constraint firstItem="O2E-IQ-H3q" firstAttribute="top" secondItem="Bs7-qr-85b" secondAttribute="top" constant="8" id="dil-V5-7V1"/>
+                                <constraint firstAttribute="bottom" secondItem="O2E-IQ-H3q" secondAttribute="bottom" constant="8" id="hcq-ip-mTh"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="O2E-IQ-H3q" secondAttribute="trailing" id="qbh-b6-NQ4"/>
                             </constraints>
                             <connections>
-                                <outlet property="label" destination="XoK-9w-oYD" id="zuU-92-WVu"/>
-                                <outletCollection property="gestureRecognizers" destination="KXx-n3-WlJ" appends="YES" id="wFu-My-TfV"/>
+                                <outlet property="label" destination="O2E-IQ-H3q" id="ezT-v8-7uS"/>
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="gke-bn-SWv" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="gke-bn-SWv" customClass="FeedImageCell" customModule="TopStoriesFeediOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="78.5" width="414" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gke-bn-SWv" id="QTo-4u-Yga">
@@ -146,26 +145,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
-                            <action selector="refresh" destination="fbh-gj-2tR" eventType="valueChanged" id="ZGS-2e-gP7"/>
                             <action selector="refresh" destination="jVh-Pd-8NK" eventType="valueChanged" id="zur-AL-JX8"/>
                         </connections>
                     </refreshControl>
-                    <connections>
-                        <outlet property="errorView" destination="kqZ-O6-J7C" id="dXL-MM-G5G"/>
-                        <outlet property="refreshController" destination="fbh-gj-2tR" id="9sd-Pc-2RP"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U16-6a-fcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="fbh-gj-2tR" customClass="FeedRefreshViewController" customModule="TopStoriesFeediOS" customModuleProvider="target">
+                <tapGestureRecognizer id="ywe-CE-NMB">
                     <connections>
-                        <outlet property="view" destination="RM8-NI-h9U" id="ji4-MJ-iyw"/>
-                    </connections>
-                </customObject>
-                <tapGestureRecognizer id="KXx-n3-WlJ">
-                    <connections>
-                        <action selector="hideMessageAnimated" destination="kqZ-O6-J7C" id="hX6-12-3BD"/>
+                        <action selector="hideMessageAnimated" destination="Bs7-qr-85b" id="hNQ-sk-jqL"/>
+                        <outlet property="delegate" destination="O2E-IQ-H3q" id="MGf-4I-IqR"/>
                     </connections>
                 </tapGestureRecognizer>
+                <customObject id="fbh-gj-2tR"/>
             </objects>
             <point key="canvasLocation" x="-222" y="-504"/>
         </scene>

@@ -7,8 +7,7 @@
 
 import Foundation
 
-internal struct RemoteFeedItem: Decodable {
-    internal let id: UUID
+internal struct RemoteFeedItem: Codable {
     internal let title: String?
     internal let abstract: String?
     internal let url: URL
