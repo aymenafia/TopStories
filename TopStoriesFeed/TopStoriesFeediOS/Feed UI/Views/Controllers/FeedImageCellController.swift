@@ -46,13 +46,8 @@ final class FeedImageCellController: FeedImageView {
         cell?.onRetry = delegate.didRequestImage
     }
     
-    func selected() {
-        debugPrint(vm?.title)
-        debugPrint(vm?.byline)
-        debugPrint(vm?.image)
-
-        debugPrint(vm?.url)
-
+    func selected() -> FeedImageViewModel<UIImage> {
+        return FeedImageViewModel(title: vm?.title, abstract: vm?.abstract, byline: vm?.byline, url: vm!.url, image: vm?.image, isLoading: true, shouldRetry: true)
     }
     
     private func releaseCellForReuse() {

@@ -33,7 +33,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         URLCache.shared = URLCache(memoryCapacity: 1000 * 1024 * 1024,
                                    diskCapacity:   1000 * 1024 * 1024,
                                    diskPath:       nil)
-        window?.rootViewController = feedViewController
+        window?.rootViewController = UINavigationController(rootViewController: feedViewController)
+        self.window?.makeKeyAndVisible()
+
     }
 
 }

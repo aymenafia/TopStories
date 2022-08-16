@@ -39,7 +39,9 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cellController(forRowAt: indexPath).selected()
+        let detailsVC = FeedUIComposer.makeDetailsViewController(feedImageViewModel: cellController(forRowAt: indexPath).selected())
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+       
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
