@@ -16,7 +16,7 @@ Landscape orientation
 
 
 
-<img src="https://user-images.githubusercontent.com/26444488/185144437-8ebe8d46-004e-4aee-8df6-3530a5e32d23.png" alt="" width="800" height="800">
+<img src="https://user-images.githubusercontent.com/26444488/185144437-8ebe8d46-004e-4aee-8df6-3530a5e32d23.png" alt="" width="1100" height="800">
 
 
 ---
