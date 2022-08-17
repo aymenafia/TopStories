@@ -6,11 +6,11 @@
 
 
 
-<img src="https://user-images.githubusercontent.com/26444488/185142420-ba7496d0-860f-4d8f-823b-f855ac93e85f.png" alt="" width="400" height="700">
+<img src="https://user-images.githubusercontent.com/26444488/185142420-ba7496d0-860f-4d8f-823b-f855ac93e85f.png" alt="" width="200" height="500">
 
 
 
-<img src="[https://user-images.githubusercontent.com/26444488/177273201-91d88137-8570-450e-9e8b-7a9f48a55a16.png](https://user-images.githubusercontent.com/26444488/185142641-fc89d67d-743d-407b-8c8a-216f52c76851.png)" alt="" width="400" height="700">
+<img src="https://user-images.githubusercontent.com/26444488/185142979-e18daed3-bfab-4c35-b9ba-89c6358e037c.png" alt="" width="200" height="500">
 
 
 
