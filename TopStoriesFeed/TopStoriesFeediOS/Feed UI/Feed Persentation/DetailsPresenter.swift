@@ -11,7 +11,7 @@ import UIKit
 protocol DetailsPresenter {
     
     func showSeeMore(url: URL)
-
+    
     func detailsTitle() -> String?
     func image() -> UIImage?
     func author() -> String
@@ -20,12 +20,12 @@ protocol DetailsPresenter {
 }
 
 final class DetailsDefaultPresenter {
-
+    
     
     fileprivate unowned let view: DetailsView
     fileprivate let router: DetailsRouter
     fileprivate let feedImageViewModel: FeedImageViewModel<UIImage>
-
+    
     
     init(view: DetailsView, router: DetailsRouter, feedImageViewModel: FeedImageViewModel<UIImage>) {
         self.view = view
@@ -40,7 +40,7 @@ extension DetailsDefaultPresenter: DetailsPresenter  {
         router.showSeeMore(url: url)
     }
     
-
+    
     func readMoreURL() -> URL {
         return  feedImageViewModel.url
     }
@@ -51,7 +51,7 @@ extension DetailsDefaultPresenter: DetailsPresenter  {
     
     func description() -> String {
         feedImageViewModel.abstract  ?? ""
-
+        
     }
     
     func image() -> UIImage? {
@@ -62,5 +62,5 @@ extension DetailsDefaultPresenter: DetailsPresenter  {
         return feedImageViewModel.title 
     }
     
-
+    
 }

@@ -25,7 +25,7 @@ final class FeedImageDataLoaderPresentationAdapter<View: FeedImageView, Image>: 
         
         let model = self.model
         guard let url = model.multimedia.first?.url else { return }
-
+        
         task = imageLoader.loadImageData(from: url) { [weak self] result in
             switch result {
             case let .success(data):

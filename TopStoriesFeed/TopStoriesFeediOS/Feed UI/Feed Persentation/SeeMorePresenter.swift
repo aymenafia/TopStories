@@ -24,7 +24,7 @@ final class SeeMoreDefaultPresenter {
     }
 }
 
-// MARK: - DetailsDefaultPresenter
+// MARK: - SeeMoreDefaultPresenter
 extension SeeMoreDefaultPresenter: SeeMorePresenter  {
 
     func storyUrl() -> URL {
