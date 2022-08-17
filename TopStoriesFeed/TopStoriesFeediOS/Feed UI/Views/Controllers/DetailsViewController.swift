@@ -15,12 +15,11 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var imageViewContainer: UIView!
     
     public var presenter: DetailsPresenter!
-    @IBOutlet weak var secondContainer: UIStackView!
     
     @IBOutlet weak var detailsStackView: UIStackView!
     @IBOutlet weak var authorLabel: UILabel!
     
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var titleLabel: UILabel!
     
     
@@ -29,16 +28,14 @@ class DetailsViewController: UIViewController {
         
         storyImageView.setImageAnimated(presenter.image())
         titleLabel.text = presenter.detailsTitle()
-        descriptionLabel.text = presenter.description()
+        descriptionTextView.text = presenter.description()
         authorLabel.text = presenter.author()
     }
     
     @IBAction func didTapOnReanMore(_ sender: Any) {
         presenter.showSeeMore(url: presenter.readMoreURL())
     }
-    
-    
-    
+        
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if DeviceInfo.Orientation.isLandscape {
