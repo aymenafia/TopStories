@@ -4,13 +4,16 @@
 ![Swift](https://img.shields.io/badge/Language-Swift-orange)
 ![Xcode 13](https://img.shields.io/badge/IDE-Xcode%2012-blue)
 
+# Portrait orientation
 
 
-Landscape orientation
+<img src="https://user-images.githubusercontent.com/26444488/185189335-82b86829-6cfd-40f7-9f4f-b63252937553.png" alt="" width="250" height="700"> <img src="https://user-images.githubusercontent.com/26444488/185189447-88842347-090f-4aff-b0c6-8875125ba45e.png" alt="" width="250" height="700">
 
-<img src="https://user-images.githubusercontent.com/26444488/185188243-3ed0db4b-694b-4a32-b002-06b9b019017a.png" alt="" width="500" height="250"> <img src="https://user-images.githubusercontent.com/26444488/185188395-1e03c9ca-7557-43af-99f8-62dab44517dc.png" alt="" width="500" height="250">
+# Landscape orientation
 
-#Architecture Overview
+<img src="https://user-images.githubusercontent.com/26444488/185188243-3ed0db4b-694b-4a32-b002-06b9b019017a.png" alt="" width="500" height="250"> <img src="https://user-images.githubusercontent.com/26444488/185189150-f39d4e18-f3ad-47c2-a2c7-0d5150176e03.png" alt="" width="500" height="250">
+
+# Architecture Overview
 
 
 Breaking responsibilities into multiple protocols (Interface Segregation Principle) to achieve flexible, composable and modular components.
