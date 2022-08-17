@@ -6,13 +6,9 @@
 
 
 
-
-
-<img src="https://user-images.githubusercontent.com/26444488/185187490-f2e58a0f-366d-4236-82da-c5edf07c611c.png" alt="" width="250" height="500"> <img src="https://user-images.githubusercontent.com/26444488/185187680-1db1304e-b5ee-482c-872b-d3505d071d80.png" alt="" width="250" height="500">
-
 Landscape orientation
 
-<img src="https://user-images.githubusercontent.com/26444488/185143314-af7ff3a4-78b6-4ec0-bfb4-1f4ca6d09e32.png" alt="" width="500" height="250"> <img src="https://user-images.githubusercontent.com/26444488/185143501-a6c04f7e-8002-42fc-aec0-7660b31ae898.png" alt="" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/26444488/185188243-3ed0db4b-694b-4a32-b002-06b9b019017a.png" alt="" width="500" height="250"> <img src="https://user-images.githubusercontent.com/26444488/185188395-1e03c9ca-7557-43af-99f8-62dab44517dc.png" alt="" width="500" height="250">
 
 #Architecture Overview
 
